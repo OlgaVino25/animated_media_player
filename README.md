@@ -27,6 +27,7 @@
 - **jQuery:** Используется для упрощения работы с DOM (подключается через CDN).
 - **Font Awesome:** Иконки для кнопок управления.
 - **livereload:** Сервер для разработки с автоматической перезагрузкой страницы.
+- **Roboto:** Шрифт Google Fonts
 
 ## Структура проекта
       
@@ -35,6 +36,7 @@
 **static** - Статические файлы (CSS, JS)
 - favicon.ico - иконка сайта
 - font-awesome.min.css - стили для иконок
+- normalize.css - сбрасывает стандартные стили браузера
 - player.js - основной JavaScript-код логики плеера. Для работы он требует двух библиотек - jQuery и Playable.
 
 **index.html** - Главный HTML-файл
@@ -65,6 +67,18 @@ python serve.py
 
 # Откройте http://127.0.0.1:5500
 ```
+
+Если хочется выбрать другое видео, с помощью аргумента src, в вызове функции `createPlayer` в файле `index.html`, плееру можно указать какое видео проигрывать, ссылки обязаны заканчиваться расширением файла:
+
+```html
+<script type="text/javascript">
+  createPlayer({
+    elementId: 'player',
+    src: 'https://dvmn.org/media/filer_public/d0/16/d016d9b8-4180-4bb9-ad83-0241f61627b8/samsung_demo_-_alive_in_color.mp4'
+});
+</script>
+```
+
 
 ## Особенности реализации
 
