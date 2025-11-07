@@ -2,7 +2,7 @@
 
 Простой, но функциональный медиаплеер. Плеер демонстрирует навыки работы с HTML5, CSS3, JavaScript и интеграции сторонних библиотек.
 
-[Демо](https://olgavino25.github.io/custom_video_player/)
+[Демо](https://olgavino25.github.io/animated_media_player/)
 
 ![демо](https://github.com/user-attachments/assets/899ee920-925a-450b-b7eb-46d7efa6a6dd)
 
