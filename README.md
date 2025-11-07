@@ -4,7 +4,7 @@
 
 [Демо](https://olgavino25.github.io/custom_video_player/)
 
-![демо](https://github.com/user-attachments/assets/ed893d32-3d7e-40e4-9936-5a9e68585dca)
+![демо](https://github.com/user-attachments/assets/899ee920-925a-450b-b7eb-46d7efa6a6dd)
 
 ## Функциональность
 
