@@ -74,6 +74,11 @@
         position: relative;
       }
 
+      .progress-container:hover .dot,
+      .controls-panel:hover .dot {
+        opacity: 1;
+      }
+
       .dot {
         position: absolute;
         top: 50%;
@@ -89,7 +94,8 @@
         border-left-width: 3px;
         border-right-width: 3px;
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-        transition: left 0.1s;
+        transition: left 0.1s linear, opacity 300ms;
+        opacity: 0;
       }
 
       .spacer {
