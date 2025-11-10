@@ -60,15 +60,23 @@
         font-family: "Roboto", sans-serif;
       }
 
+      .progress-group {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        column-gap: 10px;
+        padding: 0 10px;
+      }
+
       .progress-container {
-        margin: 10px;
-        width: 16%;
+        flex-grow: 1;
+        margin: 0;
+        width: auto;
         height: 5px;
         background-color: #555;
         border-radius: 2px;
         cursor: pointer;
         position: relative;
-        flex-shrink: 0;
       }
 
       .progress-slider {
@@ -104,10 +112,6 @@
         opacity: 0;
       }
 
-      .spacer {
-        flex-grow: 1;
-      }
-
       .icon-white {
         color: white;
         font-size: 20px;
@@ -135,16 +139,16 @@
             <span class="icon-white"><i class="fa fa-volume-up" aria-hidden="true"></i></span>
           </button>
 
-          <span class="js-current-time time-display">0:00</span>
-          <span class="time-display"></span>
-          <div class="js-progress progress-container">
-            <div class="js-progress-slider progress-slider">
-              <div class="js-dot dot"></div>
+          <div class="progress-group">
+            <span class="js-current-time time-display">0:00</span>
+            <div class="js-progress progress-container">
+              <div class="js-progress-slider progress-slider">
+                <div class="js-dot dot"></div>
+              </div>
             </div>
+            <span class="js-duration time-display">0:00</span>
           </div>
 
-          <div class="spacer"></div>
-          <span class="js-duration time-display">0:00</span>
           <button class="js-fullscreen-button control-button">
             <span class="icon-white"><i class="fa fa-expand" aria-hidden="true"></i></span>
           </button>
